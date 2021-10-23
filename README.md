@@ -42,12 +42,14 @@
 ## About The Project
 
 
+
 ### Built With
 
 JavaScript DOM
 * [JavaScript DOM](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/75366470/JavaScript+DOM)
 * [JSON Server](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/76611741/Up+and+Running+with+JSON+Server)
 * [Asynchronous JavaScript](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/74317907/Asynchronous+JavaScript)
+
 
 
 <!-- GETTING STARTED -->
@@ -72,13 +74,20 @@ To get a local copy up and running follow these simple example steps.
   ```sh
    npm start
    ```
-http://127.0.0.1:8081/
+   http://127.0.0.1:8081/
 
 4. Start json-server
  ```sh
-   json-server --watch data/db.json or npx json-server --watch data/db.json
+   json-server --watch data/db.json
    ```
-http://localhost:3000/
+   
+   In my case I used the command below to run the json-server:
+ ```sh
+   npx json-server --watch data/db.json
+   ```
+   http://localhost:3000/
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing

@@ -69,20 +69,18 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ```
-
 3. Start hhtp-server
-  ```sh
+   ```sh
    npm start
    ```
    http://127.0.0.1:8081/
 
 4. Start json-server
- ```sh
+   ```sh
    json-server --watch data/db.json
    ```
-   
    In my case I used the command below to run the json-server:
- ```sh
+   ```sh
    npx json-server --watch data/db.json
    ```
    http://localhost:3000/

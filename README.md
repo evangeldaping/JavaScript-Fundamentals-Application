@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ```
-3. Start hhtp-server
+3. Start http-server
    ```sh
    npm start
    ```

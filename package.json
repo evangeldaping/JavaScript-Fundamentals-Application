@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "dependencies": {
+    "@types/json-server": "^0.14.4",
+    "http-server": "^13.0.2"
+  }
+}

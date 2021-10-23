@@ -7,7 +7,7 @@
 
 
   <p align="center">
-    An awesome roadmap about JavaScript Fundamentals!
+    An awesome roadmap about JavaScript Fundamentals Application!
     <br />
     <a href="https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/74678330/JavaScript+Fundamentals"><strong>Explore the docs »</strong></a>
   </p>

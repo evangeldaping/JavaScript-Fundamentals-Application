@@ -1,9 +1,20 @@
-// javascript for index.html
+export const Home = {
+    render: () => {
+        return `
+            <h1>All Blogs</h1>
+            <form class="search">
+                <input type="text" name="term" placeholder="search term">
+            </form>
+            <div id="blogs">
+            </div>
+        `;
+    }
+}
 
-const container = document.querySelector('.blogs');
-const searchForm = document.querySelector('.search');
+export const renderPosts = async (term) => {
+    const searchForm = document.querySelector('.search');
+    const container = document.querySelector('#blogs');
 
-const renderPosts = async (term) => {
     let url = 'http://localhost:3000/posts?_sort=likes&&_order=desc';
     if (term) {
         url += `&q=${term}`;
@@ -25,11 +36,9 @@ const renderPosts = async (term) => {
     })
 
     container.innerHTML = template;
+
+    searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        renderPosts(searchForm.term.value.trim());
+    })
 }
-
-searchForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    renderPosts(searchForm.term.value.trim());
-})
-
-window.addEventListener('DOMContentLoaded', () => renderPosts());

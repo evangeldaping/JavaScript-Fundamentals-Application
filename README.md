@@ -49,6 +49,7 @@ JavaScript DOM
 * [JavaScript DOM](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/75366470/JavaScript+DOM)
 * [JSON Server](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/76611741/Up+and+Running+with+JSON+Server)
 * [Asynchronous JavaScript](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/74317907/Asynchronous+JavaScript)
+* [Basic SPA JavaScript router] https://dev.to/pixari/build-a-very-basic-spa-javascript-router-2k4p
 
 
 
@@ -77,13 +78,9 @@ To get a local copy up and running follow these simple example steps.
 
 4. Start json-server
    ```sh
-   json-server --watch data/db.json
+   npm run data
    ```
-   In my case I used the command below to run the json-server:
-   ```sh
-   npx json-server --watch data/db.json
-   ```
-   http://localhost:3000/
+   http://localhost:8888/posts
 
 
 

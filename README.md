@@ -77,13 +77,9 @@ To get a local copy up and running follow these simple example steps.
 
 4. Start json-server
    ```sh
-   json-server --watch data/db.json
+   npm run data
    ```
-   In my case I used the command below to run the json-server:
-   ```sh
-   npx json-server --watch data/db.json
-   ```
-   http://localhost:3000/
+   http://localhost:8888/posts
 
 
 

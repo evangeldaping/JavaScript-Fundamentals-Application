@@ -30,7 +30,7 @@ export const renderPosts = async (term) => {
                 <h2>${post.title}</h2>
                 <p><small>${post.likes} likes</small></p>
                 <p>${post.body.slice(0, 200)}...</p>
-                <a href="./details.html?id=${post.id}">read more...</a>
+                <a href="#/details?id=${post.id}">read more...</a>
             </div>
         `
     })

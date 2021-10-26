@@ -4,7 +4,7 @@ const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 
 const renderDetails = async () => {
-    const response = await fetch('http://localhost:3000/posts/' + id);
+    const response = await fetch('http://localhost:8888/posts/' + id);
     const post = await response.json();
 
     const template = `
@@ -16,7 +16,7 @@ const renderDetails = async () => {
 }
 
 deleteBtn.addEventListener('click', async (e) => {
-    const res = await fetch('http://localhost:3000/posts/' + id, {
+    const res = await fetch('http://localhost:8888/posts/' + id, {
         method: 'DELETE'
     });
 

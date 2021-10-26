@@ -15,7 +15,7 @@ export const renderPosts = async (term) => {
     const searchForm = document.querySelector('.search');
     const container = document.querySelector('#blogs');
 
-    let url = 'http://localhost:3000/posts?_sort=likes&&_order=desc';
+    let url = 'http://localhost:8888/posts?_sort=likes&&_order=desc';
     if (term) {
         url += `&q=${term}`;
     }

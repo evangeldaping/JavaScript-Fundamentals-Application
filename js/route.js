@@ -6,7 +6,7 @@ import { Error } from './components/Error/Error.js';
 // Routes 
 const routes = [
     { path: '/', component: Home },
-    { path: '/createBlog', component: Add },
+    { path: '/create', component: Add },
 ];
 
 const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
@@ -24,9 +24,9 @@ const router = () => {
 
     if (path === '/') renderPosts();
     
-    if (path === '/createBlog') {
+    if (path === '/create') {
         const form = document.querySelector('form');
-        form.addEventListener('submit', (e) => createPost(e));
+        form.addEventListener('submit', (e) => createPost(e, form));
     } 
 };
 

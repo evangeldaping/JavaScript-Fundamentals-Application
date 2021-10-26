@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "start": "http-server -c-1 -p 8081"
+    "start": "http-server -c-1 -p 8081",
+    "data" : "json-server --watch data/db.json --port 8888"
   },
   "dependencies": {
-    "@types/json-server": "^0.14.4",
-    "http-server": "^13.0.2"
+    "http-server": "^13.0.2",
+    "json-server": "^0.17.0"
   }
 }

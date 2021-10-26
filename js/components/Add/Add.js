@@ -11,7 +11,7 @@ export const Add = {
     }
 }
 
-export const createPost = async (e) => {
+export const createPost = async (e, form) => {
     e.preventDefault();
 
     const doc = {
@@ -20,15 +20,13 @@ export const createPost = async (e) => {
         likes: 0,
     }
 
-    // await fetch('http://localhost:3000/posts', {
-    //     method: 'POST',
-    //     body: JSON.stringify(doc),
-    //     headers: { 'Content-Type': 'application/json' }
-    // })
+    await fetch('http://localhost:8888/posts', {
+        method: 'POST',
+        body: JSON.stringify(doc),
+        headers: { 'Content-Type': 'application/json' }
+    })
 
-    // window.location.href('/');
-
-    console.log(doc);
+    window.location.href = '/';
 }
 
 

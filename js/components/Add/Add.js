@@ -2,7 +2,7 @@ export const Add = {
     render: () => {
         return `
             <h1>Create a New Blog</h1>
-            <form class="create">
+            <form>
                 <input type="text" name="title" required placeholder="Blog title"/>
                 <textarea name="body" required placeholder="Blog body"></textarea>
                 <button>Create</button>
@@ -12,8 +12,6 @@ export const Add = {
 }
 
 export const createPost = async (e) => {
-    const createform = document.querySelector('.create');
-
     e.preventDefault();
 
     const doc = {
@@ -22,13 +20,15 @@ export const createPost = async (e) => {
         likes: 0,
     }
 
-    await fetch('http://localhost:3000/posts', {
-        method: 'POST',
-        body: JSON.stringify(doc),
-        headers: { 'Content-Type': 'application/json' }
-    })
+    // await fetch('http://localhost:3000/posts', {
+    //     method: 'POST',
+    //     body: JSON.stringify(doc),
+    //     headers: { 'Content-Type': 'application/json' }
+    // })
 
-    // window.location.replace('./index.html')
+    // window.location.href('/');
 
-    createform.addEventListener('submit', createPost);
+    console.log(doc);
 }
+
+

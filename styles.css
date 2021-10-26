@@ -7,6 +7,7 @@ body {
     color: #444;
     max-width: 960px;
     margin: 100px auto;
+    margin-top: 0;
     padding: 10px;
 }
 nav {

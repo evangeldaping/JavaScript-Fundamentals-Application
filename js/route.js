@@ -1,12 +1,12 @@
 // Components
 import { Home, renderPosts } from './components/Home/Home.js';
-import { Add } from './components/Add/Add.js';
+import { Add, createPost } from './components/Add/Add.js';
 import { Error } from './components/Error/Error.js';
 
 // Routes 
 const routes = [
-    { path: '/', component: Home, },
-    { path: '/createBlog', component: Add, },
+    { path: '/', component: Home },
+    { path: '/createBlog', component: Add },
 ];
 
 const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
@@ -23,7 +23,11 @@ const router = () => {
     document.getElementById('app').innerHTML = component.render();
 
     if (path === '/') renderPosts();
-    if (path === '/createBlog') createPost();
+    
+    if (path === '/createBlog') {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => createPost(e));
+    } 
 };
 
 window.addEventListener('hashchange', router);

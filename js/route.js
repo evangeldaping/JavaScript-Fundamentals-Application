@@ -12,11 +12,20 @@ const routes = [
 ];
 
 const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
-const findComponentByPath = (path, routes) => routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gmi'))) || undefined;
+const findComponentByPath = (path, routes) => {
+
+    if(path.includes("/details")) {
+        return routes.filter(route => route.path === '/details')[0]
+        // result
+        // [{ path: '/details', component: Details }][0]
+    }
+
+    return routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gmi'))) || undefined
+};
 
 const router = () => {
     // TODO: Get the current path
-    
+
     // TODO: Find the component based on the current path
     const path = parseLocation();
     // TODO: If there's no matching route, get the "Error" component
@@ -31,8 +40,8 @@ const router = () => {
         form.addEventListener('submit', (e) => createPost(e, form)); 
     }
 
-    if (path === 'details') renderDetails();
- };
+    if (path.includes("/details")) renderDetails();
+};
 
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);

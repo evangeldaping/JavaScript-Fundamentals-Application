@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+* {
+    box-sizing: border-box;
+}
+
 /* base styles */
 body {
     background: #eee;
@@ -55,4 +59,32 @@ textarea {
 }
 .post a {
     color: #36cca2;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover,
+.delete:hover,
+.update:hover,
+a:hover {
+    opacity: 0.7;
+    /* background-color: #fff; */
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete {
+    background-color: red;
 }

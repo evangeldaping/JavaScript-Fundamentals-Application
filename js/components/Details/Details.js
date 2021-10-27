@@ -3,8 +3,26 @@ export const Details = {
         return `
             <div class="details post">
             </div>
-            <div class="btn">
+            <div class="btnsContainer">
                 <button class="delete">DELETE</button>
+                <button class="update" onclick="document.getElementById('id01').style.display='block'">UDPATE</button>
+            </div>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                        <h1>Update Blog</h1>
+
+                        <input type="text" name="title" required placeholder="Blog title"/>
+                        <textarea name="body" required placeholder="Blog body"></textarea>
+                        
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <button type="button" class="deletebtn">Update</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         `;
     }
@@ -34,6 +52,15 @@ export const renderDetails = async () => {
         }
     })
 
-    window.addEventListener('DOMContentLoaded', () => renderDetails());
+    // Get the modal
+    const modal = document.getElementById('id01');
 
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => renderDetails());
 }

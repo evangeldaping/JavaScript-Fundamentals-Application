@@ -5,7 +5,7 @@ export const Add = {
             <form>
                 <input type="text" name="title" required placeholder="Blog title"/>
                 <textarea name="body" required placeholder="Blog body"></textarea>
-                <button>CREATE</button>
+                <button class="create">CREATE</button>
             </form>
         `;
     }

@@ -84,13 +84,36 @@ h2 {
     color: #f17a7e;
 }
 
+h3 {
+    color: #ffffff;
+}
+
 p {
     color: #f9faf4;
 }
 
 .search input {
     background-color: #ffc94b;
+    border-radius: 10px;
+    height: 50px;
+    color: #ee5a5a;
+    font-family: "Lobster", cursive;
+    -webkit-box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
 }
+
+.create-author,
+.create-title,
+.create-description {
+    background-color: #ffc94b;
+    border-radius: 10px;
+    height: 50px;
+    color: #ee5a5a;
+    font-family: "Lobster", cursive;
+    -webkit-box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
 /* Set a style for all buttons */
 button {
     background-color: #04aa6d;
@@ -121,6 +144,8 @@ button:hover,
 .create {
     background-color: #4a6163;
     border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
 }
 
 .delete:hover {
@@ -215,6 +240,8 @@ hr {
     overflow: hidden;
     background-color: #4a6163;
     border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.5);
 }
 
 .topnav a {
@@ -263,4 +290,17 @@ hr {
         display: block;
         text-align: left;
     }
+}
+
+#description {
+    color: black;
+}
+
+hr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 12px;
+    background: black;
+    margin-bottom: 50px;
 }

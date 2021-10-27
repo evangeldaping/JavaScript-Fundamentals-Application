@@ -31,7 +31,7 @@ const router = () => {
     // TODO: If there's no matching route, get the "Error" component
     const { component = Error } = findComponentByPath(path, routes) || {};
     // TODO: Render the component in the "app" placeholder
-    document.getElementById('app').innerHTML = component.render();
+    document.getElementById('blog-container').innerHTML = component.render();
 
     if (path === '/') renderPosts();
     

@@ -1,4 +1,5 @@
 export const Details = {
+    
     render: () => {
         return `
             <div class="details post">
@@ -14,12 +15,13 @@ export const Details = {
                     <div class="container">
                         <h1>Update Blog</h1>
 
-                        <input type="text" name="title" required placeholder="Blog title"/>
-                        <textarea name="body" required placeholder="Blog body"></textarea>
+                        <input class="create-title" type="text" name="title" required placeholder="Blog title"/>
+                        <input class="create-author" type="text" name="author" required placeholder="Blog author"/>
+                        <textarea class="create-description" name="body" required placeholder="Blog description"></textarea>
                         
                         <div class="clearfix">
                             <button type="button" class="cancelbtn">Cancel</button>
-                            <button type="button" class="deletebtn">Update</button>
+                            <button type="button" class="updatebtn">Update</button>
                         </div>
                     </div>
                 </form>
@@ -38,7 +40,8 @@ export const renderDetails = async () => {
 
     const template = `
     <h1>${post.title}</h1>
-    <p>${post.body}</p>
+    <h3>${post.author}</h3>
+    <p>${post.description}</p>
     `
 
     container.innerHTML = template;

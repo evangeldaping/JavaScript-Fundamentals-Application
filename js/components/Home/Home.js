@@ -3,7 +3,7 @@ export const Home = {
         return `
             <h1>All Blogs</h1>
             <form class="search">
-                <input type="text" name="term" placeholder="search term">
+                <input type="text" name="term" placeholder="Search term">
             </form>
             <div id="blogs">
             </div>
@@ -28,8 +28,9 @@ export const renderPosts = async (term) => {
         template += `
             <div class = "post">
                 <h2>${post.title}</h2>
+                <h3>${post.author}</h3>
+                <p>${post.description.slice(0, 200)}...</p>
                 <p><small>${post.likes} likes</small></p>
-                <p>${post.body.slice(0, 200)}...</p>
                 <a href="#/details?id=${post.id}">read more...</a>
             </div>
         `

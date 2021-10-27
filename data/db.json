@@ -2,35 +2,45 @@
   "posts": [
     {
       "id": 1,
-      "likes": 30,
       "title": "Better Programming",
-      "body": "Better Programming is a programming-oriented blog on Medium. They publish multiple articles every day from several authors, all curated and edited to ensure excellent content. They cover a range of subjects and languages for programming, with content for both beginners and very advanced readers. If you want to develop programming skills, it’s a must-have on your daily reading list. So, before you plan to start your own programming blog, it is best to be a regular reader of Better Programming blogs!"
+      "author": "John Doe",
+      "description": "Better Programming is a programming-oriented blog on Medium. They publish multiple articles every day from several authors, all curated and edited to ensure excellent content. They cover a range of subjects and languages for programming, with content for both beginners and very advanced readers. If you want to develop programming skills, it’s a must-have on your daily reading list. So, before you plan to start your own programming blog, it is best to be a regular reader of Better Programming blogs!",
+      "likes": 30
     },
     {
       "id": 2,
-      "likes": 15,
       "title": "Lynda",
-      "body": "Lynda is one of the best online learning programming websites for most people worldwide, with over 6000 courses ranging from WordPress to PHP. Lynda also lets you evaluate your performance through quizzes. You must be wondering about the subjects that are covered on this programming blog. Well, Lynda has a wide variety of subjects, but a few of the courses that you can find on this website related to web development are: WordPress, PHP, CSS and HTML, JavaScript, Angular, Node.js and React.js"
+      "author": "John Doe",
+      "description": "Lynda is one of the best online learning programming websites for most people worldwide, with over 6000 courses ranging from WordPress to PHP. Lynda also lets you evaluate your performance through quizzes. You must be wondering about the subjects that are covered on this programming blog. Well, Lynda has a wide variety of subjects, but a few of the courses that you can find on this website related to web development are: WordPress, PHP, CSS and HTML, JavaScript, Angular, Node.js and React.js",
+      "likes": 15
     },
     {
+      "id": 3,
       "title": "Erik Bernhardsson",
-      "body": "Erik Bernhardsson is an outstanding blogger and coder with a programming blog. He discusses topics concerning all coders, such as Git repository, IDEs, naming conventions, and Windows support problems. You can check out this minimalist, well-written coding blog if you’re interested in coding from a business perspective or if you want to pick up some short tips for your next project. Bernhardsson also tackles problems in the wider context that concern programmers, such as conversion rates or SaaS (Software as a Service).",
-      "likes": 20,
-      "id": 3
+      "author": "John Doe",
+      "description": "Erik Bernhardsson is an outstanding blogger and coder with a programming blog. He discusses topics concerning all coders, such as Git repository, IDEs, naming conventions, and Windows support problems. You can check out this minimalist, well-written coding blog if you’re interested in coding from a business perspective or if you want to pick up some short tips for your next project. Bernhardsson also tackles problems in the wider context that concern programmers, such as conversion rates or SaaS (Software as a Service).",
+      "likes": 20
     },
     {
+      "id": 4,
       "title": "My Programming Blog",
-      "body": "This blog includes posts on tips, techniques, and shortcuts regarding programming. It includes C, Java, PHP, Python, and Ruby on Rails tutorials. Established in 2011, the blog is intended to help individuals explore tools for programming and development. The blog founder began the site with some simple notes and questions he gathered in his college class. The posts were evidently in high demand by the audience, and eventually, his personal blog became the one-stop destination for programming reviews, snippets, and tutorials.",
-      "likes": 69,
-      "id": 4
-    }
-  ],
-  "polls": [
+      "author": "John Doe",
+      "description": "This blog includes posts on tips, techniques, and shortcuts regarding programming. It includes C, Java, PHP, Python, and Ruby on Rails tutorials. Established in 2011, the blog is intended to help individuals explore tools for programming and development. The blog founder began the site with some simple notes and questions he gathered in his college class. The posts were evidently in high demand by the audience, and eventually, his personal blog became the one-stop destination for programming reviews, snippets, and tutorials.",
+      "likes": 69
+    },
     {
-      "id": 1,
-      "question": "Do you prefer Vue or React?",
-      "answerA": "Vue",
-      "answerB": "React"
+      "title": "TITLE TEST",
+      "author": "AUTHOR TEST",
+      "description": "DESC TEST",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "title": "TITLE TEST 2",
+      "author": "AUTHOR TEST 2",
+      "description": "DESC TEST 2",
+      "likes": 0,
+      "id": 8
     }
   ]
 }

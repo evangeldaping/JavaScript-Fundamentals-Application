@@ -3,8 +3,9 @@ export const Add = {
         return `
             <h1>Create a New Blog</h1>
             <form>
-                <input type="text" name="title" required placeholder="Blog title"/>
-                <textarea name="body" required placeholder="Blog body"></textarea>
+                <input class="create-title" type="text" name="title" required placeholder="Blog title"/>
+                <input class="create-author" type="text" name="author" required placeholder="Blog author"/>
+                <textarea class="create-description" name="description" required placeholder="Blog description"></textarea>
                 <button class="create">CREATE</button>
             </form>
         `;
@@ -14,9 +15,10 @@ export const Add = {
 export const createPost = async (e, form) => {
     e.preventDefault();
 
-    const doc = {
+    const doc = {       
         title: form.title.value,
-        body: form.body.value,
+        author: form.author.value,
+        description: form.description.value,
         likes: 0,
     }
 

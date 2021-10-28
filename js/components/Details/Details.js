@@ -37,6 +37,12 @@ export const renderDetails = async () => {
     const response = await fetch('http://localhost:8888/posts/' + id);
     const post = await response.json();
 
+    // Handling fetch errors
+    if (!response.ok) {
+        const message = `An error has occured: ${response.status}`;
+        throw new Error(message);
+    }
+
     const template = `
     <div class="post-container">
         <div class="image">
@@ -45,7 +51,7 @@ export const renderDetails = async () => {
         <div>
             <h2>${post.title}</h2>
             <h3>${post.author}</h3>
-            <p>${post.description}...</p>
+            <p>${post.description}</p>
             <p><small>${post.likes} likes</small></p>
         </div>
     </div>

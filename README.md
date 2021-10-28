@@ -45,7 +45,6 @@
 
 ### Built With
 
-JavaScript DOM
 * [JavaScript DOM](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/75366470/JavaScript+DOM)
 * [JSON Server](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/76611741/Up+and+Running+with+JSON+Server)
 * [Asynchronous JavaScript](https://goodfrontend.atlassian.net/wiki/spaces/GOODFRONTE/pages/74317907/Asynchronous+JavaScript)

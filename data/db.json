@@ -29,9 +29,9 @@
       "likes": 69
     },
     {
-      "title": "TITLE TEST",
-      "author": "AUTHOR TEST",
-      "description": "DESC TEST",
+      "title": "Title Test",
+      "author": "Author Test",
+      "description": "Desc Test",
       "likes": 0,
       "id": 7
     },
@@ -41,6 +41,13 @@
       "description": "DESC TEST 2",
       "likes": 0,
       "id": 8
+    },
+    {
+      "title": "JS fundamentals",
+      "author": "E",
+      "description": "BLog",
+      "likes": 0,
+      "id": 9
     }
   ]
 }

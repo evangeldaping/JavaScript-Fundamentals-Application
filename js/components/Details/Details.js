@@ -6,7 +6,6 @@ export const Details = {
             </div>
             <div class="btnsContainer">
                 <button class="delete">DELETE</button>
-                <button class="update" onclick="document.getElementById('id01').style.display='block'">UDPATE</button>
             </div>
 
             <div id="id01" class="modal">
@@ -39,9 +38,17 @@ export const renderDetails = async () => {
     const post = await response.json();
 
     const template = `
-    <h1>${post.title}</h1>
-    <h3>${post.author}</h3>
-    <p>${post.description}</p>
+    <div class="post-container">
+        <div class="image">
+            <img src="https://www.mofea.gm/assets/images/no-profile.png" alt="image unknown" width="70" height="70">
+        </div>
+        <div>
+            <h2>${post.title}</h2>
+            <h3>${post.author}</h3>
+            <p>${post.description}...</p>
+            <p><small>${post.likes} likes</small></p>
+        </div>
+    </div>
     `
 
     container.innerHTML = template;

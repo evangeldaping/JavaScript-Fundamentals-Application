@@ -26,13 +26,19 @@ export const renderPosts = async (term) => {
     let template = '';
     posts.forEach(post => {
         template += `
-            <div class = "post">
-                <h2>${post.title}</h2>
-                <h3>${post.author}</h3>
-                <p>${post.description.slice(0, 200)}...</p>
-                <p><small>${post.likes} likes</small></p>
-                <a href="#/details?id=${post.id}">read more...</a>
+            <div class="post-container">
+                <div class="image">
+                    <img src="https://www.mofea.gm/assets/images/no-profile.png" alt="image unknown" width="70" height="70">
+                </div>
+                <div class="post">
+                    <h2>${post.title}</h2>
+                    <h3>${post.author}</h3>
+                    <p>${post.description.slice(0, 200)}...</p>
+                    <p><small>${post.likes} likes</small></p>
+                    <a href="#/details?id=${post.id}">read more...</a>
+                </div>
             </div>
+           
         `
     })
 
